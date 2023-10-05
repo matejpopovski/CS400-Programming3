@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Binary Search Algorithm</title>
+		<meta name="Author Name" content="Matej Popovski"/>
+	</head>
+	<body>
+		<h1> Binary Search Algorithm (Recursive) </h1>
+
+
+		<h2> Bina ry search is an efficient algorithm to search for a target item in a sorted list.
+</h2>
+		<p>
+			<a href="https://www.geeksforgeeks.org/binary-search/">
+			Link to Binary Search Algorithm </a>
+		</p>
+		<p>
+			<h3>A recursive version of binary search takes two additional input values, low and high. If n is the
+number of items in the list, then variables low and high must lie in the range 1 through n and must
+satisfy the inequality low ≤ high. The variables low and high denote a range of candidate
+locations {low, low+1, …, high} so that if x is in the list at all, then x must be reside in one of the
+locations in the range. </h3>
+		</p>
+
+
+		<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220309171621/BinarySearch.png">
+		<h2> Method Steps </h2>
+		<h3> RecBinarySearch(low, high, A, x) 2</h2>
+		<ol>
+			<li>If (low = high AND alow = x), Return(low) </li>
+			<li>If (low = high AND alow ≠ x), Return(-1) </li>
+			<li>mid := ⌊(low + high)/2⌋ </li>
+			<li>If (x ≤ a_mid), then high := mid </li>
+			<li>If (x > a_mid), then low := mid + 1 </li>
+			<li>Return( RecBinarySearch(low, high, A, x) )</li>
+		</ol>
+
+			
+		
+	</body>
+</html>
